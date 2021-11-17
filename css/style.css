@@ -1,0 +1,502 @@
+@font-face {
+	font-family: Breuer;
+	src: url(../fonts/BreuerHeadline.ttf);
+}
+@font-face {
+	font-family: BreuerItalic;
+	src: url(../fonts/BreuerText-BoldItalic.otf);
+}
+@font-face {
+	font-family: Breuerbold;
+	src: url(../fonts/BreuerText-Bold.ttf);
+}
+@font-face {
+	font-family: Breuerreg;
+	src: url(../fonts/BreuerText-Regular.otf);
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+.brand {
+	width: 45%;
+	height: 35%;
+	position: relative;
+	bottom: 23vh;
+}
+.login-field {
+	height: 2em;
+	width: 15em;
+	position: relative;
+	left: 10em;
+	bottom: 9em;
+	background: transparent;
+	border-radius: 0.2em;
+	color: white;
+	z-index: 1;
+}
+.btn-login {
+	background: rgb(253, 228, 3);
+	position: relative;
+	text-transform: uppercase;
+	border-radius: 0.2em;
+	font-family: Breuerbold;
+	color: rgb(180, 134, 14);
+	bottom: 21vh;
+	left: 7vw;
+	width: 6%;
+	height: 40px;
+	z-index: 3;
+}
+.banner {
+	width: 110%;
+	position: relative;
+	right: 5vw;
+	bottom: 55vh;
+}
+.main-text {
+	display: block;
+	text-align: center;
+	font-family: Breuer;
+}
+.main-text h5 {
+	color: #ffff;
+	font-size: 30px;
+	font-style: italic;
+	margin-top: -4vh;
+}
+.main-text h2,
+h1 {
+	color: rgb(255, 210, 4);
+	padding-top: 5px;
+	margin-top: -0.7em;
+	font-style: italic;
+	font-size: 45px;
+	
+}
+.main-text h1 {
+	font-size: 120px;
+	margin-top: -0.4em;
+	font-style: italic;
+	margin-bottom: -0.2em;
+}
+.main-text p {
+	color: #ffff;
+	font-size: 1em;
+	margin-bottom: -2.1px;
+	font-family: Breuerreg;
+}
+
+.text-block {
+	display: block;
+	text-align: center;
+	position: relative;
+	bottom: 135vh;
+	padding-right: 15px;
+}
+.btn-betnow a
+{
+	text-decoration: none;
+	color: #ffff;
+}
+.btn-betnow 
+{
+	color: rgb(255, 255, 255);
+	font-family: BreuerItalic;
+	font-size: 20px;
+	width: 16%;
+	background-image: linear-gradient(
+		to right,
+		black,
+		darkblue,
+		lightblue,
+		lightblue,
+		darkblue,
+		black
+	);
+	border: 2px solid #ffff00;
+	border-radius: 5px;
+	outline: 3px solid #ffa500;
+	position: relative;
+	top: 0.7em;
+	right: 0.1em;
+	text-transform: uppercase;
+}
+.btn-betnow:hover {
+	cursor: pointer;
+	background-image: linear-gradient(
+		to right,
+		lightblue,
+		darkblue,
+		black,
+		black,
+		darkblue,
+		lightblue
+	);
+}.step-block {
+	
+	text-align: left;
+	position: relative;
+	bottom: 55em;
+}
+
+.step-text {
+	display: inline-block;
+	font-size: 16px;
+	position: relative;
+	left: 11em;
+	bottom: 2.2em;
+	color: #ffff;
+	font-family: Breuerbold;
+}
+.step-1 {
+	background: radial-gradient(rgb(13, 104, 212), rgb(0, 152, 234));
+	height: 70px;
+	width: 70px;
+	border: 1px solid rgb(134, 135, 138);
+	border-radius: 50%;
+	position: relative;
+	margin-top: -3em;
+	top: 3em;
+	left: 4.5em;
+}
+.step-1 h1 {
+	position: relative;
+	top: 50px;
+	right: 6px;
+	text-align: center;
+	color: rgb(0, 82, 180);
+	text-shadow: 0px -1px 0px rgb(225, 225, 230);
+	font-size: 4em;
+	font-family: Breuer;
+}
+.step-1:after {
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	content: "";
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+.step-1:before {
+	font-size: 48px;
+	line-height: 90px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	display: block;
+	-webkit-font-smoothing: antialiased;
+}
+.step-1.cycle {
+	width: 92px;
+	height: 92px;
+	box-shadow: 0 0 0 4px rgb(114, 114, 114);
+}
+.step-1.cycle.small {
+	width: 45px;
+	height: 45px;
+}
+.step-1.cycle.mini {
+	width: 30px;
+	height: 30px;
+}
+.step-1.cycle.sub-a {
+	-webkit-transition: box-shadow 0.2s;
+	-moz-transition: box-shadow 0.2s;
+	transition: box-shadow 0.2s;
+}
+.step-1.cycle:before {
+	line-height: 92px;
+}
+.step-1.cycle:after {
+	top: -4px;
+	left: -4px;
+	padding: 0;
+	z-index: 10;
+	border: 4px dashed rgb(245, 241, 241);
+}
+/* Effect 4b */
+
+.step-1.cycle.trans:after {
+	-webkit-animation: spinAround 9s linear infinite;
+	-moz-animation: spinAround 9s linear infinite;
+	animation: spinAround 9s linear infinite;
+}
+@-webkit-keyframes spinAround {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@-moz-keyframes spinAround {
+	from {
+		-moz-transform: rotate(0deg);
+	}
+	to {
+		-moz-transform: rotate(360deg);
+	}
+}
+@keyframes spinAround {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.block-footer
+{
+	display: block;
+	text-align: center;
+	font-size: 12px;
+	padding: 10px;
+	color: #ffff;
+
+}
+.block-footer img
+{
+	padding: 10px;
+}
+.block-footer a
+{
+	color: #ffff;
+}
+
+
+/* view mobile */
+@media screen and (max-width: 700px) {
+	.brand {
+		width: 50%;
+		height: 15%;
+		bottom: 2vh;
+		left: 22vw;
+	}
+	.login-field {
+		height: 1.6em;
+		width: 12em;
+		font-size: 12px;
+		left: -7.6em;
+		bottom: -1em;
+	}
+	.btn-login {
+		position: relative;
+		left: -25vw;
+		top: 1em;
+		font-size: 11px;
+		border-radius: 0.2em;
+		text-transform: uppercase;
+		width: 10%;
+		height: 25px;
+	}
+	.banner {
+		width: 220%;
+		height: 450px;
+		position: relative;
+		right: 14em;
+		bottom: 2em;
+	}
+	.main-text {
+		display: block;
+		text-align: center;
+		font-family: Breuer;
+	}
+	.main-text h5 {
+		margin-top: 0.2vh;
+		color: #ffff;
+		font-size: 14px;
+		font-style: italic;
+	}
+	.main-text h2,
+	h1 {
+		color: rgb(255, 210, 4);
+		margin-top: -0.7em;
+		font-style: italic;
+		font-size: 25px;
+		padding:0;
+	}
+	.main-text h1 {
+		font-size: 50px;
+		margin-top: -0.5em;
+		font-style: italic;
+		margin-bottom: 0.1em;
+		
+	}
+	.main-text p {
+		color: #ffff;
+		font-size: 0.6em;
+		margin-top: -2em;
+		margin-bottom: -2.1px;
+		font-family: Breuerreg;
+	}
+
+	.text-block {
+		display: block;
+		text-align: center;
+		position: relative;
+		bottom: 21em;
+		padding:0;
+	}
+	.btn-betnow {
+		color: rgb(255, 255, 255);
+		font-family: BreuerItalic;
+		font-size: 12px;
+		width: 30%;
+		background-image: linear-gradient(
+			to right,
+			black,
+			darkblue,
+			lightblue,
+			lightblue,
+			darkblue,
+			black
+		);
+		border: 2px solid #ffff00;
+		border-radius: 5px;
+		outline: 3px solid #ffa500;
+		position: relative;
+		top: 0.7em;
+		right: 0.4em;
+		text-transform: uppercase;
+	}
+	.btn-betnow:hover {
+		cursor: pointer;
+		background-image: linear-gradient(
+			to right,
+			lightblue,
+			darkblue,
+			black,
+			black,
+			darkblue,
+			lightblue
+		);
+	}
+	.step-block {
+	
+		text-align: left;
+		position: relative;
+		bottom: 20em;
+	}
+
+	.step-text {
+		display: inline-block;
+		font-size: 16px;
+		position: relative;
+		left: 11em;
+		bottom: 2.2em;
+		color: #ffff;
+		font-family: Breuerbold;
+	}
+	.step-1 {
+		background: radial-gradient(rgb(13, 104, 212), rgb(0, 152, 234));
+		height: 70px;
+		width: 70px;
+		border: 1px solid rgb(134, 135, 138);
+		border-radius: 50%;
+		position: relative;
+		margin-top: -3em;
+		top: 3em;
+		left: 4.5em;
+	}
+	.step-1 h1 {
+		position: relative;
+		top: 50px;
+		right: 6px;
+		text-align: center;
+		color: rgb(0, 82, 180);
+		text-shadow: 0px -1px 0px rgb(225, 225, 230);
+		font-size: 4em;
+		font-family: Breuer;
+	}
+	.step-1:after {
+		pointer-events: none;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		content: "";
+		-webkit-box-sizing: content-box;
+		-moz-box-sizing: content-box;
+		box-sizing: content-box;
+	}
+	.step-1:before {
+		font-size: 48px;
+		line-height: 90px;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		display: block;
+		-webkit-font-smoothing: antialiased;
+	}
+	.step-1.cycle {
+		width: 92px;
+		height: 92px;
+		box-shadow: 0 0 0 4px rgb(114, 114, 114);
+	}
+	.step-1.cycle.small {
+		width: 45px;
+		height: 45px;
+	}
+	.step-1.cycle.mini {
+		width: 30px;
+		height: 30px;
+	}
+	.step-1.cycle.sub-a {
+		-webkit-transition: box-shadow 0.2s;
+		-moz-transition: box-shadow 0.2s;
+		transition: box-shadow 0.2s;
+	}
+	.step-1.cycle:before {
+		line-height: 92px;
+	}
+	.step-1.cycle:after {
+		top: -4px;
+		left: -4px;
+		padding: 0;
+		z-index: 10;
+		border: 4px dashed rgb(245, 241, 241);
+	}
+	/* Effect 4b */
+
+	.step-1.cycle.trans:after {
+		-webkit-animation: spinAround 9s linear infinite;
+		-moz-animation: spinAround 9s linear infinite;
+		animation: spinAround 9s linear infinite;
+	}
+	@-webkit-keyframes spinAround {
+		from {
+			-webkit-transform: rotate(0deg);
+		}
+		to {
+			-webkit-transform: rotate(360deg);
+		}
+	}
+	@-moz-keyframes spinAround {
+		from {
+			-moz-transform: rotate(0deg);
+		}
+		to {
+			-moz-transform: rotate(360deg);
+		}
+	}
+	@keyframes spinAround {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg);
+		}
+	}
+
+	
+}

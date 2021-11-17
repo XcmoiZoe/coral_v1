@@ -1,0 +1,21 @@
+@font-face {
+	font-family: Breuerreg;
+	src: url(../fonts/BreuerText-Regular.otf);
+}
+
+body
+{
+    background:rgb(4,36,70);
+    color:#ffff;
+    font-family: Breuerreg;
+    
+}
+.container
+{
+    padding: 0 350px;
+}
+h3
+{
+    text-align: center;
+    text-decoration: underline;
+}
